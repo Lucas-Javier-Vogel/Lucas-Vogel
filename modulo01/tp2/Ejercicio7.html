@@ -1,0 +1,21 @@
+<!-- Escribir una función que reciba un 
+texto y lo devuelva al revés. -->
+
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>programacion comision b TP2 Lucas Vogel- Ejercicio 7</title>
+    <script type="text/javascript">
+        function invertirCadena(cad) {
+            var nuevaCadena = "";
+            for (var i = cad.length - 1; i >= 0; i--) { 
+                nuevaCadena += cad[i]; // o nuevaCadena = nuevaCadena + cad[i];
+            }
+            document.write(nuevaCadena); // "aloh"
+        }
+        var cad = window.prompt("Escriba el texto del cual quiera su contenido reversionado", ".....")
+        invertirCadena(cad);
+    </script>
+    </body>
+    </html>

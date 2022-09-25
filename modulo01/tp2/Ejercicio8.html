@@ -1,0 +1,44 @@
+<!-- Crea una función que genere 100 números 
+aleatorios entre 1 y 100 que no se repitan y luego
+imprima por pantalla usando document.write(text).-->
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>programacion comision b TP2 Lucas Vogel- Ejercicio 8</title>
+    <script type="text/javascript">
+
+        function aleatorizar(min, max){
+            var numero = Math.round((Math.random() * (max-min) ) + min); 
+            return numero;
+        }
+
+        var min = window.prompt("cual es el valor minimo de su aleatorizacion", "1")
+        var max = window.prompt("cual es el valor maximo de su aleatorizacion", "100")
+        //le agregue como opcion de que sea cambiable el minimo y el maximo
+        var ConjuntodeValores = new Array()
+        var random = 0
+        var copiar = true
+        var contador2 = 0
+
+        for ( var contador = 0; contador < max ; contador++){
+            do{
+                contador2 = 0
+                copiar = true  
+                var random = aleatorizar(min, max)
+                for ( var contador2 = 0; contador2 < ConjuntodeValores.length; contador2++){
+                    if ( random == ConjuntodeValores[contador2] ){
+                        copiar = false;
+                    }
+            }
+            }while(copiar == false);
+            ConjuntodeValores[contador2] = random;
+        }
+        var puesto = 0
+        for (var contador = 0; contador < ConjuntodeValores.length; contador++){
+            document.write("el valor del puesto numero "+puesto+" es: "+ConjuntodeValores[contador]+"</br>")
+            puesto++
+        }
+    </script>
+    </body>
+    </html>
