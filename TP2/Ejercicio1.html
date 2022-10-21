@@ -1,0 +1,68 @@
+<!-- A partir del siguiente array que se proporciona:
+var valores = 
+[verdadero, false, 2, "hola","mundo", 3, char];
+1. Determinar cuál de los elementos de texto
+es mayor, es decir el que contenga más letras.
+2. Imprimir los elementos de menor a mayor 
+cantidad de letras.
+3. Determinar el resultado de las cuatro 
+operaciones matemáticas realizadas con los dos
+elementos numéricos. -->
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8"> 
+    <title>programacion comision b TP2 Lucas Vogel- Ejercicio 1</title>
+    <script type="text/javascript">
+        var verdadero, char;
+        var valores = [verdadero, false, 2, "hola","mundo", 3, char];
+        var numeros = new Array();
+        var characters = new Array();
+        var MasLetras = 0;
+        var valoresConvertidos = new Array()
+
+        //guardo todos los valores del tipo numero en su array y los imprimo
+        for (var contador = 0; contador < valores.length; contador++){
+            if(typeof valores[contador]==="number"){
+                numeros.push(valores[contador]);
+            }
+        }
+        if(numeros.length == 0){
+            document.write("no hay valores del tipo number</br>")
+        }else{
+            document.write("Los valores de tipo number son: ")
+        for (var contador = 0; contador < numeros.length; contador++){
+            document.write(numeros[contador]+" ")
+        }
+        }
+
+        //lo mismo hago con los strings
+        for (var contador = 0; contador < valores.length; contador++){
+            if(typeof valores[contador]==="string"){
+                characters.push(valores[contador]);
+            }
+        }
+        if(characters.length == 0){
+            document.write("</br>no hay valores del tipo string</br>")
+        }else{
+        document.write("</br>Los valores de tipo string son: ")
+        for (var contador = 0; contador < characters.length; contador++){
+        document.write(characters[contador]+" ")
+
+        }
+        }
+
+        for (var contador = 0; contador < valores.length; contador++){
+            valoresConvertidos[contador] = toString(valores[contador])
+        }
+        for (var contador = 0; contador < valoresConvertidos.length; contador++){
+            if(MasLetras.length < valoresConvertidos[contador].length){
+                MasLetras.length = valoresConvertidos[contador].length;
+
+            }
+        }
+        document.write("</br>el mayor elemento del array es: "+MasLetras)
+
+    </script>
+    </body>
+    </html>

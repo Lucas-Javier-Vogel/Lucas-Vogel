@@ -1,0 +1,45 @@
+<!-- Ejercicio 6:
+Escribir un script que muestre la posición
+de la primera vocal de un texto introducido por
+teclado.Por ejemplo: perro = “e” es la letra Nº2 ;
+árbol = “a” es la letra Nº1*/ -->
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>programacion comision b TP2 Lucas Vogel- Ejercicio 6</title>
+    <script type="text/javascript">
+        var vocales = ["a", "e", "i", "o", "u"];
+        var textoIngresado = window.prompt("¿de que texto quiere saber su primera vocal?", "...");
+        var LowerTextoIngresado = textoIngresado.toLowerCase();
+        var LugarDeLaVocal = 0
+        var finalizar = false
+        for (var contador1 = 0; contador1 < LowerTextoIngresado.length; contador1++) {
+            for (var contador2 = 0; contador2 < vocales.length; contador2++) {
+                if (vocales[contador2] == LowerTextoIngresado.charAt(contador1)) {
+                    LugarDeLaVocal = contador1 + 1; 
+                    finalizar = true; 
+                    break;
+                }
+            }    
+
+            if (finalizar == true) {
+                break;
+            }else{
+                var NoEsta = contador1 + 1
+                document.write("no esta en la letra numero "+NoEsta+"   -")
+                //para mayor practica agregue la aparicion de las posiciones que no tienen vocal
+            }
+        }       
+        document.write("</br></br>La primera vocal esta en la posicion "+LugarDeLaVocal)
+
+    </script>
+    </body>
+    </html>
+
+
+
+
+
+
+

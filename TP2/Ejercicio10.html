@@ -1,0 +1,24 @@
+<!-- Escribir un programa que reciba el número del
+mes y devuelva si tiene 31, 30 o menos días.
+Por ejemplo : 12 = tiene 31 días. -->
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>programacion comision b TP2 Lucas Vogel- Ejercicio 10</title>
+    <script type="text/javascript">
+        var NdeMes 
+        var meses = ["vacio", Abril=30, Junio=30, Septiembre=30, Noviembre=30, Enero=31, Marzo=31, Mayo=31, Julio=31, Agosto=31, Octubre=31, Diciembre=31, Febrero=28 ]
+        NdeMes = window.prompt("¿de que mes desea saber el numero de dias que contiene?", "recuerda que los meses son del 1 al 12")
+        for ( var cont = 1 ; cont < 12 ; cont++) {
+            if (NdeMes==cont){
+                document.write("el numero de mes: "+NdeMes+" </br>tiene: "+meses[cont]+" dias");
+            }
+        }
+        if(NdeMes>12||NdeMes<0){
+            document.write("no existe un mes con este numero")
+        }
+
+    </script>
+    </body>
+    </html>
