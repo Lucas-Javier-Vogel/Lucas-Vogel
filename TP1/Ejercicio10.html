@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>  
+    <body>
+    <script type="text/javascript">
+        var meses = ["vacio", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        var contador = 0
+        var mes_elegido = 0
+        mes_elegido = window.prompt("Introduce el numero del mes (sea consciente que hay solo 12 meses", "...");
+        if(mes_elegido<13 && mes_elegido!=0)
+            for ( var contador = 0 ; contador < meses.length ; contador++) {
+                if(contador == mes_elegido){
+                    document.write("el mes equivalente al numero ingresado es "+meses[contador])
+                }
+            }
+        else{
+            document.write("el numero ingreado no tiene mes")
+        }    
+    </script>
+    </body>
+    </html>
