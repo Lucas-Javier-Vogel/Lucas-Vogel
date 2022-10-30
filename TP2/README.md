@@ -1,4 +1,4 @@
-# CURSO PROGRAMACIÓN WEB FULL STACK NIVEL 2
+# CURSO PROGRAMACIÓN WEB FULL STACK NIVEL 2 TP 2
 ## MÓDULO 1 - Nivelación y fundamentos de la Programación
 
 ## Ejercicio 1:
