@@ -1,0 +1,62 @@
+Ejercicio 1:
+a - Describe dos usos o funciones que proporciona la declaración DOCTYPE en una página web.
+- Identifica la versión de HTML empleada en la página web.
+- Ayuda a un navegador web a visualizar correctamente la página web.
+
+b - Para que se utilizan las siguientes etiquetas:
+
+<head> </head>
+provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.
+
+<title> </title>
+es una etiqueta puesta en los metadatos del html para elegir el titulo de la pagina web.
+
+<meta>
+se utiliza para colocar en esta los valores que estan por detras de la pagina
+
+<style> </style>
+es para aplicar un estilo mediante CSS a una pagina.
+
+<body> </body>
+es la etiqueta que enmarca cual es el cuerpo del html.
+
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>
+la etiqueta h en si es la que convierte en encabezado (por lo que resalta) al texto encerrado con esta, los numeros son para definir lo que destacara respecto al texto.
+
+<a>
+esta etiqueta es utilizada para colocar un enlace en nuestra pagina el cual nos redirigirá (normalmente) al enlace en cuestion.
+
+<strong>
+enmarca el texto encerrado por la etiqueta.
+
+<br>
+sirve para dar un salto de linea.
+
+<ul>
+sirve para crear una lista no ordenada.
+
+<li>
+son items que conforman una ul o una ol (lista ordenada).
+
+<p>
+sirve para decir que es un parrafo lo encerrado por esta etiqueta.
+
+<span>
+Sirve para aplicar estilo al texto o agrupar elementos en línea(se utiliza para elementos en línea, no en bloque).puede usarse cuando queremos que una parte del texto tenga un estilo diferente, pero no queremos usar énfasis o strong.
+
+<table> </table>
+esta sirve para crear una tabla.
+
+<tr> </tr>
+definen cada fila de la tabla y encierran todas las columnas.
+
+<td> </td>
+define cada una de las columnas de las filas.
+
+<img>
+sirve para insertar una imagen mediante nuestros archivos o por un enlace (utilizando <a>).
+
+c- La etiqueta <script> puede ir dentro de las etiquetas de de <body> o <head>, hay alguna
+diferencia donde pueda ir?
+
+la diferencia que yo puedo percibir es que este script se cargara antes o despues, produciendo asi diferentes consecuencias dependiendo de su ubicacion (como al final del body lo cual normalmente significa  una mejor carga de la pagina aunque se puede realizar lo mismo poniendolo en el head con una funcion async)
