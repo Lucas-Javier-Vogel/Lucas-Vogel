@@ -1,0 +1,24 @@
+Investigar y dar una definición con sus palabras los siguientes términos:
+- REST
+- API
+- Endpoint
+- Encabezados (headers)
+
+- REST :
+En mis palabras, podria decir que "REST" es un estilo de 
+arquitectura de software para realizar una comunicacion cliente-servidor.
+se apoya en el protocolo HTTP para la comunicacion con el servidor 
+y los mensajes que se reciben y envian estan en XML o JSON si no mal recuerdo.
+
+- API :
+La "API" es una "application programming interface" la cual podria decirse que es la que 
+genera un contrato entre dos aplicaciones que se comunican 
+mediante solicitudes y respuestas (cliente-servidor).
+
+- Endpoint :
+El "Endpoint" es un dispositivo remoto que se comunica con una red a la que esta conectado 
+(algunos ejemplos son Celulares, Portatiles o Computadoras de escritorio).
+
+- Encabezados(headers) :
+Son los metadatos adicionales que se mandan a la API 
+para ayudar al servidor a identificar que tipo solicitud se esta mandando.
